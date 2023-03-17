@@ -1,19 +1,21 @@
 #include <stdio.h>
+
 /**
- * main - entry point
- *
- * Return: always 0 (success)
+ * main - prints the possible combinations
+ * Return: always 0 success
  */
 int main(void)
 {
-	int i, j;
+	int x;
 
-	for (i = '0'; i <= '9'; i++)
+	for (x = 48; x < 58; x++)
 	{
-		for (j = '0'; j <= '9'; j++)
-			putchar(i);
+		putchar(x);
+		if (x != 57)
+		{
 			putchar(',');
-			putchar(j);
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
