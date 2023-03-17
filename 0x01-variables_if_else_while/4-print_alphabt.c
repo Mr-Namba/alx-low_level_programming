@@ -11,8 +11,9 @@ int main(void)
 
 	alpha = 'A';
 	l_al = tolower(alpha);
-	for (l_al = 'a'; l_al <= 'z' && l_al != 'q' && l_al != 'e'; ++l_al)
-		putchar(l_al);
+	for (l_al = 'a'; l_al <= 'z'; ++l_al)
+		if (l_al != 'e' && l_al != 'q')
+			putchar(l_al);
 	putchar('\n');
 	return (0);
 }
