@@ -9,7 +9,7 @@ int main(void)
 {
 	int bsix, l_bsix;
 
-	bsix = '0x0';
+	bsix = "0x0";
 	l_bsix = tolower(bsix);
 	while (l_bsix <= 'f')
 	{
