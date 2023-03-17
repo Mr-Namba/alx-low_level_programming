@@ -8,11 +8,11 @@ int main(void)
 {
 	int base_10;
 
-	base_10 = 0;
+	base_10 = 48;
 
-	while (base_10 > 10)
+	while (base_10 < 58)
 	{
-		putchar('0' + base_10);
+		putchar(base_10);
 		base_10++;
 	}
 	putchar('\n');
