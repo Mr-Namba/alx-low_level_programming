@@ -10,9 +10,9 @@ int main(void)
 
 	i = '0';
 	j = '0';
-	for (i < '10'; i++)
+	for (i <= '9'; i++)
 	{
-		for (j < '10'; j++)
+		for (j < '9'; j++)
 			putchar(i);
 			putchar(',');
 			putchar(j);
