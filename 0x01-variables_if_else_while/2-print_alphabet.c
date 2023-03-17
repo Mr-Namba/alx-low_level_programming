@@ -13,6 +13,6 @@ int main(void)
 	l_alpha = tolower(alpha);
 	for (l_alpha = 'a'; l_alpha <= 'z'; ++l_alpha)
 		putchar(l_alpha);
-		putchar('\n');
+	putchar('\n');
 	return (0);
 }
