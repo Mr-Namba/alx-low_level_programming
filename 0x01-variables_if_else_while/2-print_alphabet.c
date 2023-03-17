@@ -14,5 +14,4 @@ int main(void)
 	for (l_alpha = 'a'; l_alpha <= 'z'; ++l_alpha)
 		putchar(l_alpha);
 	return (0);
-
-
+}
