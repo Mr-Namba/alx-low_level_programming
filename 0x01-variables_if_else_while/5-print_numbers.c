@@ -9,7 +9,8 @@ int main(void)
 	int base_10;
 
 	base_10 = 0;
-	for (base_10 < 10; base_10++)
-		printf("%d\n", base_10);
+	while (base_10 < 10, base_10++)
+		printf("%d", base_10);
+	putchar('\n');
 	return (0);
 }
