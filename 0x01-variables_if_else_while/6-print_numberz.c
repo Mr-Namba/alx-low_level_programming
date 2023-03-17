@@ -8,9 +8,9 @@ int main(void)
 {
 	int base_10;
 
-	base_10 = 48;
+	base_10 = '0';
 
-	while (base_10 < 58)
+	while (base_10 <= '9')
 	{
 		putchar(base_10);
 		base_10++;
