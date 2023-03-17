@@ -20,7 +20,7 @@ int main(void)
 	while (l_bsix <= 'f')
 	{
 		putchar(l_bsix);
-		l_bsix++
+		l_bsix++;
 	}
 	putchar('\n');
 	return (0);
