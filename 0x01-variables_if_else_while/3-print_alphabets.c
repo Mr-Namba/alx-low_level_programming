@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int alhpa, l_alpha, u_alpha;
+	int alpha, l_alpha, u_alpha;
 
 	alpha = 'A';
 	l_alpha = tolower(alpha);
