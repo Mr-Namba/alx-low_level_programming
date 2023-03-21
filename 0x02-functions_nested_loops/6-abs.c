@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * _abs - finds the absolute value of the number
  * @int: is the number to be made absilute
