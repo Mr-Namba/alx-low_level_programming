@@ -2,11 +2,13 @@
 #include <ctype.h>
 #include "main.h"
 /**
- * main - entry point
+ * print_alphabet - prints alphabet in lower case
  *
  * Return: always 0 (success)
  */
-int main(void)
+
+
+void print_alphabet(void)
 {
 	char c, cl;
 
@@ -14,5 +16,6 @@ int main(void)
 	cl = tolower(c);
 	for (cl = 'a'; cl <= 'z'; cl++)
 		_putchar(cl);
-	return (0);
+	_putchar('\n');
 }
+
