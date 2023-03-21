@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  * _abs - finds the absolute value of the number
- * @int: is the number to be made absilute
+ * @n: is the number to be made absilute
  * Return: always 0 (success)
  */
-int _abs(int)
+int _abs(int n)
 {
 	if (n < 0)
 		n = -n;
