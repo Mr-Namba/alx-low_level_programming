@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
-* main - stops an infinite loop
-* \o/: happy to skip inite loop
+* main - Causes an infinite loop
 * Return: 0
 */
 
