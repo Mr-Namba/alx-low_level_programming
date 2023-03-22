@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
-* main - causes an infinite loop
+* main - stops an infinite loop
+* \o/: happy to skip inite loop
 * Return: 0
 */
 
@@ -10,9 +11,9 @@ int main(void)
 	int i;
 
 	printf("Infinite loop incoming :(\n");
+
+	i = 0;
 /**
-*	i = 0;
-*
 *	while (i < 10)
 *	{
 *	putchar(i);
