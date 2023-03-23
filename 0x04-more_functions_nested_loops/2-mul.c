@@ -5,7 +5,7 @@
  * @b: chararacter to be multiplied
  * Return: product of two
  */
-int mul(int a, int b);
+int mul(int a, int b)
 {
 
 	int c;
