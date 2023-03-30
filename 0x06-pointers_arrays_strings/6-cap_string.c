@@ -11,17 +11,8 @@ char *cap_string(char *a)
 
 	for (i = 0; a[i] != '\0'; i++)
 	{
-		if ((a[i] >= 'A' && a[i] <= 'Z') || (a[i] >= 'a' && a[i] <= 'z'))
-		{
-			a[i] = a[i];
-		}
-		else if (a[i] >= 0 && a[i] <= 9)
-			a[i] = a[i];
-		else if (a[i] == ' ' || a[i] == '\t' || a[i] == '\n')
-			a[i + 1] = toupper(a[i + 1]);
-		else
-			a[i + 1] = toupper(a[i + 1]);
-	}
+		if (!isalpha(a[i - 1]) && !isdigit(a[i - 1]) && isalpha(a[i]))
+			a[i] = toupper(a[i]);
 	return (a);
 }
 
