@@ -17,7 +17,7 @@ char *cap_string(char *a)
 		}
 		else if (a[i] >= 0 && a[i] <= 9)
 			a[i] = a[i];
-		else if (a[i] == ' ')
+		else if (a[i] == ' ' || a[i] == '\t' || a[i] == '\n')
 			a[i + 1] = toupper(a[i + 1]);
 		else
 			a[i + 1] = toupper(a[i + 1]);
