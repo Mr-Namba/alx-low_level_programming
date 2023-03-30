@@ -19,6 +19,8 @@ char *cap_string(char *a)
 			a[i] = a[i];
 		else if (a[i] == ' ')
 			a[i + 1] = toupper(a[i + 1]);
+		else
+			a[i + 1] = toupper(a[i + 1]);
 	}
 	return (a);
 }
