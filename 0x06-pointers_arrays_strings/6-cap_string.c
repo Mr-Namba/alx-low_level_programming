@@ -15,6 +15,10 @@ char *cap_string(char *a)
 	{
 		if (!isalpha(a[i - 1]) && !isdigit(a[i - 1]) && isalpha(a[i]))
 			a[i] = toupper(a[i]);
+		else if ((a[i - 1] == '\n' || a[i - 1] == '\t') && isalpha(a[i]))
+			a[i] = toupper(a[i]);
+		else if (a[i - 1] == ' ' && isalpha(a[i]))
+			a[i] = toupper(a[i]);
 	}
 	return (a);
 }
