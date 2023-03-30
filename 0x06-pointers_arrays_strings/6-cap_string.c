@@ -1,24 +1,31 @@
 #include "main.h"
-#include <ctype.h>
-/**
- * cap_string - capitalize the string
- * @a: the string
- * Return: returns the character
- */
-char *cap_string(char *a)
-{
-	int i;
 
-	if (isalpha(a[0]))
-		a[0] = toupper(a[0]);
-	for (i = 1; a[i] != '\0'; i++)
+/**
+ * cap_string - capitalizes the words in the string
+ * @s: string to modify
+ *
+ * Return: the results
+ */
+char *cap_string(char *s)
+{
+	int count = 0, i;
+	char spe[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+
+	if (*(s + count) >= 97 && *(s + count) <= 122)
+		*(s + count) = *(s + count) - 32;
+	count++;
+	while (*(s + count) != '\0')
 	{
-		if (!isalpha(a[i - 1]) && !isdigit(a[i - 1]) && isalpha(a[i]))
-			a[i] = toupper(a[i]);
-		else if ((a[i - 1] == '\n' || a[i - 1] == '\t') && isalpha(a[i]))
-			a[i] = toupper(a[i]);
-		else if (a[i - 1] == ' ' && isalpha(a[i]))
-			a[i] = toupper(a[i]);
+		for (i = 0; i < 13; i++)
+		{
+			if (*(s + count) == spe[i])
+			{
+				if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
+					*(s + (count + 1)) = *(s + (count + 1)) - 32;
+				break;
+			}
+		}
+		count++;
 	}
-	return (a);
+	return (s);
 }
