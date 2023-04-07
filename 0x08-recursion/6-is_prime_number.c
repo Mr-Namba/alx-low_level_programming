@@ -9,7 +9,7 @@ int check_prime(unsigned int n, unsigned int i)
 {
 	if (n == 1)
 		return (1);
-	else if (n % i == 0 && i > 0)
+	if (n % i == 0 && i > 0)
 		return (0);
 	return (check_prime(n, i - 1));
 }
