@@ -5,7 +5,7 @@
  * @i: the checker
  * Return: result
  */
-int check_prime(int n, int i)
+int check_prime(unsigned int n, unsigned int i)
 {
 	if (n == 1)
 		return (1);
