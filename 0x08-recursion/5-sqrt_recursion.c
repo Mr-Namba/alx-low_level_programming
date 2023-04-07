@@ -8,5 +8,5 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (int _pow_recursion(n, 0.5));
+	return (_pow_recursion(n, 0.5));
 }
