@@ -7,10 +7,10 @@
  */
 int check_prime(int n, int i)
 {
-	if (n % i == 0 && i > 0)
-		return (0);
-	else if (n == 1)
+	if (n == 1)
 		return (1);
+	else if (n % i == 0 && i > 0)
+		return (0);
 	return (check_prime(n, i - 1));
 }
 /**
