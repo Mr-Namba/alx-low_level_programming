@@ -5,13 +5,13 @@
  * @i: the checker
  * Return: result
  */
-int check_prime(unsigned int n, unsigned int i)
+int check_prime(int n, int i)
 {
-	if (n == 1)
-		return (1);
-	if (n % i == 0 && i > 0)
+	if (i < 2 || i % n == 0)
 		return (0);
-	return (check_prime(n, i - 1));
+	else if (i > n / 2)
+		return (1);
+	return (check_prime(n + 1, i));
 }
 /**
  * is_prime_number - shows an integer is prime number of note
@@ -20,7 +20,7 @@ int check_prime(unsigned int n, unsigned int i)
  */
 int is_prime_number(int n)
 {
-	if (n <= 1)
-		return (0);
-	return (check_prime(n, n - 1));
+	if (n == 2)
+		return (1);
+	return (check_prime(2, n));
 }
