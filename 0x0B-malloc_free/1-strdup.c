@@ -13,6 +13,9 @@ char *_strdup(char *str)
 
 	unsigned int j;
 
+	i = 0;
+	j = 0;
+
 	if (str == NULL)
 		return (NULL);
 	while (str[j])
