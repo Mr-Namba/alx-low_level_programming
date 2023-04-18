@@ -13,7 +13,10 @@ int main(int argc, char *argv[])
 
 	prod = atoi(argv[1]) * atoi(argv[2]);
 	if (argc != 3)
+	{
 		printf("error\n");
+		return (1);
+	}
 	else
 		printf("%d\n", prod);
 	return (0);
