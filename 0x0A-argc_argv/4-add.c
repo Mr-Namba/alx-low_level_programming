@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
 /**
  * main - entry point
  * @argc: the number of parameters
