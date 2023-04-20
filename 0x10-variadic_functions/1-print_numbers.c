@@ -1,0 +1,25 @@
+#include "variadic_functions.h"
+/**
+ * print_numbers - to print numbers in the string
+ * @separator: the string to seaparate numbers
+ * @n: the number integers paseed to the function
+ * Return: 0 for success
+ */
+void print_numbers(const char *separator, const unsigned int n, ...)
+{
+	usigned int i;
+	va_list p;
+
+	va_start(p, n);
+
+	if (seperator == NULL)
+		seperator = "";
+	for (i = 0; i < n; i++)
+	{
+		printf("%d", va_arg(p, int));
+		if (i < n - 1)
+			printf("%s", seperator);
+	}
+	printf("\n");
+	va_end(p);
+}
