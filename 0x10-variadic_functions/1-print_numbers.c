@@ -1,4 +1,7 @@
 #include "variadic_functions.h"
+#include <stdio.h>
+#include <stdarg.h>
+
 /**
  * print_numbers - to print numbers in the string
  * @separator: the string to seaparate numbers
