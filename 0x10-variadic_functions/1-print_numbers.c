@@ -1,4 +1,4 @@
-#include "variadic_functions.h"
+#include i"variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -10,7 +10,7 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	usigned int i;
+	unsigned int i;
 	va_list p;
 
 	va_start(p, n);
